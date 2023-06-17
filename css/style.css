@@ -1,0 +1,4714 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+::selection {
+    background-color: #fd0d3c;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+header {
+    background: url(../../Img/pizzeria-template-hero-bg-img.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 36% 12%;
+    border-bottom-right-radius: 36% 12%;
+
+}
+
+header::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+
+    border-bottom-left-radius: 36% 12%;
+    border-bottom-right-radius: 36% 12%;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+header .top .topleft span {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+header .top .topright .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+header .top .topright .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+header .nav {
+    text-align: center;
+    padding-top: 30px;
+}
+
+header .nav ul {
+    list-style: none;
+}
+
+header .nav ul li {
+    display: inline-block;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 30px;
+    opacity: 0.8;
+    transition: .3s ease;
+}
+
+header .nav ul li .home {
+    opacity: 1;
+}
+
+header .nav ul li a:hover:not(.home) {
+    opacity: 1;
+}
+
+header .header-content {
+    text-align: center;
+}
+
+header .header-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 95px;
+    font-weight: 700;
+    color: white;
+    padding: 250px 0 20px 0;
+}
+
+header .header-content p {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+    max-width: 818px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+header .header-content .btn2 {
+    padding: 10px 20px;
+    background: #e4032f;
+    border: none;
+    /* border: 1px solid white; */
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+    opacity: 0.9;
+    margin-right: 20px;
+}
+
+header .header-content .btn2:hover {
+    opacity: 1;
+}
+
+header .header-content .btn3 {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+header .header-content .btn3:hover {
+    background-color: #fff;
+    color: black;
+}
+
+header .header-img {
+    text-align: center;
+    transform: translateY(200px);
+}
+
+.fresh {
+    text-align: center;
+}
+
+.fresh img {
+    border-radius: 50%;
+    /* text-align: center; */
+}
+
+.fresh h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    color: #e70c37;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fresh p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 329px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.one {
+    padding-top: 144px;
+}
+
+.two {
+    padding-top: 266px;
+}
+
+.three {
+    padding-top: 144px;
+}
+
+
+.middle {
+    background: url(../../Img/pizzeria-template-delivery-section-img-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: 90px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.middle::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.middle .happy h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.middle .happy p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 20px;
+    /* max-width: 300px; */
+}
+
+.middle .online .mobile span {
+    text-align: center;
+    color: #fff;
+    background-color: #e4032f;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 60px;
+
+}
+
+.middle .online .mobile {
+    text-align: center;
+
+}
+
+
+.middle .online h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 50px;
+}
+
+.middle .online h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+
+.choose {
+    text-align: center;
+}
+
+.choose h6 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+
+    font-weight: 700;
+    color: #e4032f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 90px 0 20px 0;
+}
+
+.choose h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+
+}
+
+.choose p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 518px;
+    padding: 20px 0;
+}
+
+.choose .btn4 {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid #e4032f;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #e4032f;
+    cursor: pointer;
+    transition: .3s ease;
+
+
+
+}
+
+.choose .btn4:hover {
+    background-color: #e4032f;
+    color: white;
+
+}
+
+.pasta {
+    text-align: center;
+}
+
+.pasta img {
+    width: 300px;
+    cursor: pointer;
+    transition: .4s ease;
+
+
+
+
+}
+
+/* .pasta {
+    position: absolute;
+    z-index: 5;
+} */
+
+.pasta img:hover {
+    transform: translateY(-10px);
+}
+
+.pasta h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #e4032f;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.four {}
+
+.five {
+    padding-top: 60px;
+}
+
+.main2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.best h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: black;
+    /* padding: 150px 0 40px 0; */
+
+}
+
+.main2 .btn5 {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid #e4032f;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #e4032f;
+    cursor: pointer;
+    transition: .3s ease;
+
+
+
+}
+
+.main2 .btn5:hover {
+    background-color: #e4032f;
+    color: white;
+}
+
+.main2 {
+    padding: 100px 0 20px 0;
+
+}
+
+
+
+.best-img {
+    background: url(../../Img/pizzeria-template-deals-img-1.jpg) no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    width: 483px;
+    border-radius: 16px;
+
+
+}
+
+.best-img img {
+    width: 100px;
+
+    /* padding: 25px 0 190px 25px; */
+    padding: 25px 0 190px 25px;
+
+
+
+
+
+
+
+
+}
+
+.big {
+    background: url(../../Img/pizzeria-template-deals-shape-bg-1.svg) no-repeat;
+    background-size: cover;
+    padding: 30px 0 30px 180px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+
+
+}
+
+.big h6 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: yellow;
+}
+
+.big h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+.big p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 20px;
+
+
+}
+
+.combo-content {
+    background: url(../../Img/pizzeria-template-shape-bg-2.svg) no-repeat;
+    background-size: cover;
+    padding: 20px 0 60px 0;
+    width: 200px;
+    text-align: right;
+    /* position: relative; */
+    /* right: 0; */
+    margin-left: 371px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+
+.combo-main {
+    background: url(../../Img/pizzeria-template-deals-img-2.jpg) no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    width: 571px;
+    /* height: 372px; */
+    height: 423px;
+    margin-top: 50px;
+    /* border-top-left-radius: 16px; */
+    /* border-bottom-left-radius: 16px; */
+    border-radius: 16px;
+
+
+
+}
+
+.combo-content h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #fecc00;
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 222px;
+    text-align: right;
+    margin: 0 auto;
+    /* max-width: 278px; */
+}
+
+.combo-content h1 {
+    font-family: oswald, Sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+}
+
+.combo-content2 {
+    background: url(../../Img/pizzeria-template-shape-bg-3.svg) no-repeat;
+    background-size: cover;
+    padding: 6px 0 0 0;
+    width: 200px;
+    text-align: right;
+    /* position: relative; */
+    /* right: 0; */
+    margin-left: 399px;
+    border-radius: 16px;
+
+
+}
+
+.combo-main2 .combo-content2 .logo {
+    transform: translateX(-70%);
+}
+
+.combo-main2 {
+    background: url(../../Img/pizzeria-template-deals-img-3.jpg) no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    width: 599px;
+    margin-top: 50px;
+    border-radius: 16px;
+    /* height: 375px; */
+    height: 422px;
+
+
+
+}
+
+.combo-content2 h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #fecc00;
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 222px;
+    text-align: right;
+    margin: 0 auto;
+    /* max-width: 278px; */
+}
+
+.combo-content2 h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.combo-content2 h1 {
+    font-family: oswald, Sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+}
+
+.our {
+    text-align: center;
+}
+
+.our h6 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e4032f;
+    letter-spacing: 2px;
+    padding-top: 100px;
+}
+
+.our h1 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding: 20px 0;
+
+
+
+}
+
+.our p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 553px;
+    margin: 0 auto;
+}
+
+.rome {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.rome h2 {
+    color: #e4032f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.rome p {
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+.join-left {
+    padding-top: 100px;
+}
+
+.join-left h6 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.join-left h1 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+
+}
+
+.join-right {
+    padding-top: 130px;
+}
+
+.join-right p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 553px;
+    /* margin:  0 auto; */
+}
+
+.join-right .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid #e4032f;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #e4032f;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .3s ease;
+
+}
+
+.join-right .btn:hover {
+    background-color: #e4032f;
+    color: white;
+}
+
+.middle-img img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.background-red {
+    background-color: #e4032f;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.background-red .middle-main {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+}
+
+
+.background-red .middle-main .icon span {
+    font-size: 40px;
+}
+
+.background-red .middle-main .number h1 {
+    font-family: oswald, Sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    padding-left: 20px;
+
+}
+
+.background-red .middle-main .star {
+    padding-left: 20px;
+}
+
+.background-red .middle-main .star span {
+    font-size: 15px;
+}
+
+.background-red .middle-main .star h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.free h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.free h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.free p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 519px;
+}
+
+.free .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid #e4032f;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #e4032f;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .3s ease;
+
+}
+
+.free .btn:hover {
+    background-color: #e4032f;
+    color: white;
+}
+
+.app {
+    margin-left: 20px;
+}
+
+.free {
+    padding-top: 150px;
+}
+
+.free-img img {}
+
+.free-img {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.footer img {
+    margin-top: 100px;
+}
+
+.footer p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    /* max-width: 299px; */
+    max-width: 253px;
+    padding: 50px 0 20px 0;
+}
+
+.footer span {
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s linear;
+}
+
+.footer .icon-twitter:hover {
+    opacity: 0.6;
+}
+
+.footer .icon-facebook-squared:hover {
+    opacity: 0.6;
+}
+
+.footer .icon-instagram:hover {
+    opacity: 0.6;
+}
+
+.footer-about {
+    padding-top: 100px;
+}
+
+.footer-about h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.footer-about ul {
+    list-style: none;
+}
+
+.footer-about ul li {}
+
+.footer-about ul li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    transition: .3s linear;
+
+
+}
+
+.footer-about ul li a:hover {
+    color: #e70c37;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0 30px 0;
+}
+
+.bottom .bottom-left p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.bottom .bottom-right p {}
+
+
+
+/* ======================================Style of menu============================================================== */
+/* ======================================Style of menu============================================================== */
+
+.header2 {
+    background: url(../../Img/pizzeria-template-our-menu-header-img-bg.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    /* padding-bottom:  100px; */
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 36% 12%;
+    border-bottom-right-radius: 36% 12%;
+
+
+
+
+
+
+}
+
+.header2::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+
+    border-bottom-left-radius: 36% 12%;
+    border-bottom-right-radius: 36% 12%;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header2 .top .topleft span {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header2 .top .topright .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+.header2 .top .topright .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.header2 .nav {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header2 .nav ul {
+    list-style: none;
+}
+
+.header2 .nav ul li {
+    display: inline-block;
+}
+
+.header2 .nav ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 30px;
+    opacity: 0.8;
+    transition: .3s ease;
+}
+
+.header2 .nav ul li .home {
+    opacity: 1;
+}
+
+.header2 .nav ul li a:hover:not(.home) {
+    opacity: 1;
+}
+
+.header2 .our-menu h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 96px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+
+}
+
+
+
+.pasta2 img {
+    width: 80%;
+    /* transform: translateY(-40px); */
+    transition: .2s linear;
+    cursor: pointer;
+    z-index: 5;
+    transform: translateY(195px);
+
+
+}
+
+.pasta2 img:hover {
+    transform: translateY(185px);
+}
+
+.pizza2 img {
+    width: 80%;
+    /* transform: translateY(-20px); */
+    cursor: pointer;
+    transition: .2s linear;
+    transform: translateY(195px);
+
+
+
+}
+
+.pizza2 img:hover {
+    transform: translateY(185px);/
+}
+
+.dessert2 img {
+    width: 80%;
+    /* transform: translateY(-40px); */
+    cursor: pointer;
+    transition: .2s linear;
+    transform: translateY(195px);
+
+}
+
+.dessert2 img:hover {
+    transform: translateY(185px);
+}
+
+.pasta2 h2 {
+
+    transform: translateY(-25px);
+    /* text-align: center; */
+    color: #e4032f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 128px;
+    cursor: pointer;
+    transform: translateY(190px);
+
+}
+
+.pizza2 h2 {
+    transform: translateY(-25px);
+    /* text-align: center; */
+    color: #e4032f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 128px;
+    cursor: pointer;
+    transform: translateY(190px);
+
+}
+
+.dessert2 h2 {
+    transform: translateY(-25px);
+    /* text-align: center; */
+    color: #e4032f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 128px;
+    cursor: pointer;
+    transform: translateY(190px);
+
+}
+
+.pasta-middle h1 {
+    color: #e4032f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.pasta-middle p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 650px;
+}
+
+.pasta-middle {
+    padding: 250px 0 50px 0;
+}
+
+.width-img img {
+    width: 200px;
+    height: 130px;
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.width-content h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #121212;
+    padding-bottom: 20px;
+}
+
+.width-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    max-width: 336px;
+}
+
+.width-content {
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.best-img img {
+    padding: 25px 0 190px 25px;
+}
+
+.thirtyone {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.paesano img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.paesano-content h1 {
+    color: #121212;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.paesano-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 356px;
+}
+
+.fiftyone {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 30px;
+}
+
+.craft h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    color: #fd0d3c;
+    text-align: center;
+    padding: 40px 0 20px 0;
+
+}
+
+.craft p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    color: black;
+}
+
+
+
+.step {
+    border-bottom: 1px solid #121212;
+    padding-top: 30px;
+    max-width: 350px;
+}
+
+.step h5 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.step h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.step p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+
+.step2 {
+
+    padding-top: 30px;
+}
+
+.step2 h5 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.step2 h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.step2 p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    max-width: 350px;
+}
+
+.step3 {
+    padding-top: 30px;
+}
+
+.step3 h5 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.step3 h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.step3 h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: #121212;
+    font-size: 22px;
+
+}
+
+.extra p {
+    font-size: 17px;
+    font-weight: 520;
+    padding-top: 10px;
+
+}
+
+.extra h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: #121212;
+    font-size: 22px;
+    padding: 30px 0 20px 0;
+}
+
+.italian-img img {
+    border-radius: 8px;
+    width: 200px;
+    height: 120px;
+    margin-top: 40px;
+}
+
+.italian-content h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.italian-content p {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    padding: 20px 0 0 20px;
+    max-width: 350px;
+}
+
+.our-location-content h6 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.our-location-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    padding: 30px 0 20px 0;
+}
+
+.our-location-content p {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 488px;
+    padding-bottom: 50px;
+}
+
+.our-location-content {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.rome2 {
+    text-align: center;
+}
+
+.rome2 h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #fd0d3c;
+    font-size: 30px;
+}
+
+.rome2 p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    font-size: 15px;
+    margin: 0 auto;
+    max-width: 206px;
+    padding: 20px 0;
+
+}
+
+.rome2 span {
+    font-size: 17px;
+    transition: .3s linear;
+}
+
+.rome2 .icon-facebook-circled:hover {
+    color: #fd0d3c;
+}
+
+.rome2 .icon-twitter:hover {
+    color: #fd0d3c;
+}
+
+.rome2 .icon-youtube-play:hover {
+    color: #fd0d3c;
+}
+
+.rome2 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #fd0d3c;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+
+.rome2 h5:hover {
+    color: #121212;
+}
+
+
+
+/* ======================================Style of About============================================================== */
+/* ======================================Style of About============================================================== */
+
+
+
+
+.header3 {
+    background: url(../../Img/pizzeria-template-about-header-img-bg\ -\ Copy.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 36% 28%;
+    border-bottom-right-radius: 36% 28%;
+
+
+
+
+
+
+}
+
+.header3::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+
+    border-bottom-left-radius: 36% 28%;
+    border-bottom-right-radius: 36% 28%;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header3 .top .topleft span {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header3 .top .topright .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+.header3 .top .topright .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.header3 .nav {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header3 .nav ul {
+    list-style: none;
+}
+
+.header3 .nav ul li {
+    display: inline-block;
+}
+
+.header3 .nav ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 30px;
+    opacity: 0.8;
+    transition: .3s ease;
+}
+
+.header3 .nav ul li .home {
+    opacity: 1;
+}
+
+.header3 .nav ul li a:hover:not(.home) {
+    opacity: 1;
+}
+
+.header3 .our-menu h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+
+}
+
+.header3 .our-menu p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 527px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+
+.about-our-story-img {
+    margin-top: 180px;
+}
+
+.about-our-story {
+    padding-top: 150px;
+}
+
+.about-our-story h6 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.about-our-story h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    padding: 30px 0 20px 0;
+
+
+}
+
+.about-our-story p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 612px;
+}
+
+.about-it-img img {
+    margin-top: 60px;
+    width: 366px;
+    height: 370px;
+}
+
+.about-it-img h5 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 20px 0 10px 0;
+
+
+}
+
+.about-it-img h6 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 100px;
+
+}
+
+.about-it-right h3 {
+    padding-top: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+
+.about-it-right p {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 310px;
+}
+
+.about-background {
+    background: url(../../Img/pizzeria-template-near-fireplace-img\ -\ Copy.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin-top: 100px; */
+    padding: 50px 0;
+
+}
+
+.about-background2 {
+    background-color: #fff;
+    width: 600px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+
+}
+
+.about-background2 .about-the-pizzaria h6 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.about-background2 .about-the-pizzaria h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.about-background2 .about-the-pizzaria p {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 440px;
+}
+
+.about-main {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+
+}
+
+.about-main .about-span span {
+    font-size: 25px;
+    color: red;
+}
+
+.about-main .about-four h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.about-main .about-four p {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 439px;
+}
+
+
+
+
+
+
+.about-background3 {
+    background: url(../../Img/pizzeria-template-fresh-ingredients-img.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin-top: 100px; */
+    padding: 50px 0;
+
+
+}
+
+.about-background4 {
+    background-color: #fff;
+    width: 600px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    right: 0;
+
+
+
+}
+
+.about-background4 .about-the-pizzaria h6 {
+    color: #e4032f;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.about-background4 .about-the-pizzaria h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.about-background4 .about-the-pizzaria p {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 440px;
+}
+
+.about-main {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+
+}
+
+.about-main .about-span span {
+    font-size: 25px;
+    color: red;
+}
+
+.about-main .about-four h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.about-main .about-four p {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 439px;
+}
+
+
+
+/* ================================================================= Style of offers============================================ */
+/* ================================================================= Style of offers============================================ */
+
+.header4 {
+    background: url(../../Img/pizzeria-template-menu-header-img-bg.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 36% 28%;
+    border-bottom-right-radius: 36% 28%;
+
+
+
+
+
+
+}
+
+.header4::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+
+    border-bottom-left-radius: 36% 28%;
+    border-bottom-right-radius: 36% 28%;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header4 .top .topleft span {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header4 .top .topright .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+.header4 .top .topright .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.header4 .nav {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header4 .nav ul {
+    list-style: none;
+}
+
+.header4 .nav ul li {
+    display: inline-block;
+}
+
+.header4 .nav ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 30px;
+    opacity: 0.8;
+    transition: .3s ease;
+}
+
+.header4::after .nav ul li .home {
+    opacity: 1;
+}
+
+.header4 .nav ul li a:hover:not(.home) {
+    opacity: 1;
+}
+
+.header4 .our-menu h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+
+}
+
+.header4 .our-menu p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 527px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+
+
+
+.combo-content5 {
+    background: url(../../Img/pizzeria-template-shape-bg-4.svg) no-repeat;
+    background-size: cover;
+    padding: 20px 0 60px 0;
+    width: 200px;
+    text-align: right;
+    /* position: relative; */
+    /* right: 0; */
+    margin-left: 371px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+
+.combo-main5 {
+    background: url(../../Img/pizzeria-template-deals-img-5.jpg) no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    width: 571px;
+    /* height: 372px; */
+    height: 438px;
+
+    margin-top: 50px;
+    /* border-top-left-radius: 16px; */
+    /* border-bottom-left-radius: 16px; */
+    border-radius: 16px;
+
+
+
+}
+
+.combo-content5 h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 222px;
+    text-align: right;
+    margin: 0 auto;
+    /* max-width: 278px; */
+}
+
+.combo-content5 h1 {
+    font-family: oswald, Sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+}
+
+.combo-content6 {
+    background: url(../../Img/pizzeria-template-deals-shape-bg-1.svg) no-repeat;
+    background-size: cover;
+    padding: 6px 0 0 0;
+    width: 200px;
+    text-align: right;
+    /* position: relative; */
+    /* right: 0; */
+    margin-left: 399px;
+    border-radius: 16px;
+
+
+}
+
+.combo-main6 .combo-content6 .logo {
+    transform: translateX(-70%);
+}
+
+.combo-main6 {
+    background: url(../../Img/pizzeria-template-deals-img-6.jpg) no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    width: 599px;
+    margin-top: 50px;
+    border-radius: 16px;
+    /* height: 375px; */
+    height: 438px;
+
+
+
+}
+
+.combo-content6 h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 222px;
+    text-align: right;
+    margin: 0 auto;
+    /* max-width: 278px; */
+}
+
+.combo-content6 h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.combo-content6 h1 {
+    font-family: oswald, Sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+
+
+
+}
+
+.host-a-party-main .host-a-party h1 {
+    font-family: oswald, Sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.host-a-party-main .host-a-party p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.host-a-party .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #e4032f;
+    transition: .2s linear;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+
+}
+
+.host-a-party .btn:hover {
+    color: #121212;
+}
+
+
+.host-a-party-background .host-a-party-main {
+    background: url(../../Img/pizzeria-template-shape-bg-6-1.svg) no-repeat;
+    background-size: cover;
+    height: 504px;
+    position: relative;
+    width: 802px;
+    border-bottom-left-radius: 16px;
+}
+
+.host-a-party {
+    position: absolute;
+    bottom: 0;
+    /* right: 170px; */
+    left: 60px;
+}
+
+.host-a-party-background {
+    background: url(../../Img/pizza-party-bg.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.host-a-party-background::after {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 16px;
+    z-index: -1;
+    position: absolute;
+}
+
+
+/* ======================================================== Style of Contact=================================================== */
+/* ======================================================== Style of Contact=================================================== */
+
+
+.header5 {
+    background: url(../../Img/pizzeria-template-contact-header-img-bg.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 36% 28%;
+    border-bottom-right-radius: 36% 28%;
+
+
+
+
+
+
+}
+
+.header5::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+
+    border-bottom-left-radius: 36% 28%;
+    border-bottom-right-radius: 36% 28%;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header5 .top .topleft span {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header5 .top .topright .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+.header5 .top .topright .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.header5 .nav {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header5 .nav ul {
+    list-style: none;
+}
+
+.header5 .nav ul li {
+    display: inline-block;
+}
+
+.header5 .nav ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 30px;
+    opacity: 0.8;
+    transition: .3s ease;
+}
+
+.header5::after .nav ul li .home {
+    opacity: 1;
+}
+
+.header5 .nav ul li a:hover:not(.home) {
+    opacity: 1;
+}
+
+.header5 .our-menu h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+
+}
+
+.contact-left h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.contact-main {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+}
+
+.contact-main span {
+    color: #e4032f;
+    font-size: 20px;
+}
+
+.contact-main p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 229px;
+    padding-left: 10px;
+    /* padding-bottom: 20px; */
+}
+
+.contact-main {
+    padding-bottom: 20px;
+}
+
+.contact-press h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 35px;
+
+}
+
+.contact-press h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+
+.contact-stay h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 35px;
+
+}
+
+.contact-stay span {
+    font-size: 20px;
+    cursor: pointer;
+    color: #e4032f;
+    transition: .2s linear;
+    margin-right: 10px;
+}
+
+.contact-stay .icon-twitter:hover {
+    color: #121212;
+}
+
+.contact-stay .icon-facebook-circled:hover {
+    color: #121212;
+}
+
+.contact-stay .icon-instagram:hover {
+    color: #121212;
+}
+
+.contact-stay .icon-youtube-play:hover {
+    color: #121212;
+}
+
+.contact-we h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #121212;
+
+}
+
+.contact-we p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 652px;
+    padding: 20px 0 30px 0;
+
+}
+
+label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+
+    color: #121212;
+
+}
+
+input[type="text"] {
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    background: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px;
+    width: 340px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="email"] {
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    background: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px;
+    width: 340px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="number"] {
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    background: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px;
+    width: 340px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 740px;
+    height: 120px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    overflow: auto;
+    resize: both;
+
+}
+
+input[type="submit"] {
+    color: #e4032f;
+    border: 1px solid #e4032f;
+    border-radius: 4px;
+    padding: 15px 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #e4032f;
+
+}
+
+.contact-background {
+    background-color: #fff;
+    transform: translateY(-100px);
+    z-index: 5;
+    position: absolute;
+    padding: 50px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.seventyone {
+    padding-top: 700px;
+}
+
+
+
+/* ============================================== Media queries for Home =============================================== */
+/* ============================================== Media queries for Home =============================================== */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .top .topleft {
+        padding-left: 10px;
+    }
+
+    header .top .topright .btn {
+        margin-right: 10px;
+    }
+
+    header .header-content h1 {
+        font-size: 90px;
+    }
+
+    header .header-content p {
+        font-size: 17px;
+        max-width: 786px;
+    }
+
+    .middle .happy h1 {
+        padding-left: 10px;
+    }
+
+    .middle .happy p {
+        padding-left: 10px;
+    }
+
+    .best h1 {
+        padding-left: 10px;
+    }
+
+    .main2 .btn5 {
+        margin-right: 10px;
+    }
+
+    .combo-main {
+        width: 506px;
+    }
+
+    .combo-content {
+        width: 135px;
+
+    }
+
+    .combo-main2 {
+        width: 481px;
+
+    }
+
+    .combo-content2 {
+        width: 140px;
+        margin-left: 360px;
+    }
+
+    .join-left h6 {
+        padding-left: 10px;
+    }
+
+    .join-left h1 {
+        font-size: 47px;
+        padding-left: 10px;
+    }
+
+    .join-right p {
+        padding-right: 10px;
+    }
+
+    .free h3 {
+        padding-left: 10px;
+    }
+
+    .free h1 {
+        padding-left: 10px;
+    }
+
+    .free p {
+        padding-left: 10px;
+    }
+
+    .free .btn {
+        margin-left: 10px;
+    }
+
+    .footer img {
+        margin-left: 10px;
+    }
+
+    .footer p {
+        padding-left: 10px;
+        font-size: 14px;
+        max-width: 224px;
+    }
+
+    .bottom .bottom-left p {
+        padding-left: 10px;
+    }
+
+    .bottom .bottom-right p {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+
+    .container {
+        max-width: 991px;
+        margin: 0 auto;
+    }
+
+
+
+    header .top .topleft span {
+        font-size: 18px;
+    }
+
+    header .top .topright .btn {
+        font-size: 13px;
+    }
+
+    header .nav ul li a {
+        font-size: 15px;
+    }
+
+    header .header-content h1 {
+        font-size: 59px;
+        padding: 115px 0 20px 0;
+    }
+
+    header .header-content p {
+        font-size: 15px;
+        max-width: 690px;
+    }
+
+    header .header-content .btn2 {
+        font-size: 13px;
+    }
+
+    header .header-img img {
+        width: 250px;
+    }
+
+
+    header {
+        padding-bottom: 0;
+    }
+
+    header .header-img {
+        text-align: center;
+        transform: translateY(130px);
+    }
+
+    .fresh img {
+        width: 200px;
+    }
+
+    .fresh h1 {
+        font-size: 22px;
+    }
+
+    .fresh p {
+        font-size: 14px;
+        max-width: 238px;
+    }
+
+    .middle .happy h1 {
+        font-size: 40px;
+    }
+
+    .middle .happy p {
+        font-size: 15px;
+    }
+
+    .middle .online .mobile span {
+        font-size: 45px;
+    }
+
+    .middle .online h3 {
+        font-size: 20px;
+    }
+
+    .middle .online h5 {
+        font-size: 13px;
+    }
+
+    .middle {
+        padding: 60px 0;
+    }
+
+    .choose h1 {
+        font-size: 40px;
+    }
+
+    .choose p {
+        font-size: 15px;
+        max-width: 514px;
+    }
+
+    .choose .btn4 {
+        font-size: 13px;
+    }
+
+    .pasta img {
+        width: 210px;
+    }
+
+    .pasta h2 {
+        font-size: 25px;
+    }
+
+    .main2 {
+        padding: 47px 0 20px 0;
+    }
+
+    .best h1 {
+        font-size: 35px;
+    }
+
+    .main2 .btn5 {
+        font-size: 13px;
+    }
+
+
+    /* .big {
+        width: 511px;
+        height: 341px;
+    } */
+
+    .big {
+        width: 511px;
+        height: 294px;
+    }
+
+    .big h1 {
+        font-size: 43px;
+    }
+
+    .best-img {
+        width: 322px;
+    }
+
+    .big p {
+        font-size: 15px;
+    }
+
+    .combo-main {
+        width: 363px;
+    }
+
+    .combo-content {
+        margin-left: 228px;
+    }
+
+    .combo-main2 {
+        width: 384px;
+    }
+
+    .combo-content2 {
+        width: 140px;
+        margin-left: 244px;
+    }
+
+    .combo-content h2 {
+        font-size: 28px;
+    }
+
+    .combo-content h1 {
+        font-size: 66px;
+    }
+
+    .combo-content2 h2 {
+        font-size: 28px;
+    }
+
+    .combo-content2 h5 {
+        font-size: 13px;
+    }
+
+    .combo-content2 h1 {
+        font-size: 54px;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .our h1 {
+        font-size: 45px;
+    }
+
+    .our p {
+        font-size: 15px;
+        max-width: 520px;
+    }
+
+    .rome h2 {
+        font-size: 30px;
+    }
+
+    .rome p {
+        font-size: 13px;
+    }
+
+    .join-left h6 {
+        font-size: 15px;
+        padding-top: 40px;
+    }
+
+    .join-left h1 {
+        font-size: 40px;
+    }
+
+    .join-right p {
+        font-size: 15px;
+        max-width: 369px;
+    }
+
+    .join-right .btn {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+
+    .free h3 {
+        font-size: 30px;
+    }
+
+    .free h1 {
+        font-size: 34px;
+
+    }
+
+    .free p {
+        max-width: 349px;
+        font-size: 14px;
+    }
+
+    .free .btn {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .free-img img {
+        width: 300px;
+    }
+
+    .footer img {
+        width: 100px;
+    }
+
+    .footer p {
+        font-size: 13px;
+        max-width: 155px;
+    }
+
+
+    .footer span {
+        font-size: 17px;
+        margin-left: 5px;
+    }
+
+    .footer-about h3 {
+        font-size: 20px;
+    }
+
+    .footer-about ul li a {
+        font-size: 13px;
+    }
+
+    .bottom .bottom-right p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    header {
+        background-position: center;
+    }
+
+    .top {
+        display: block;
+    }
+
+    .top .topleft {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .topright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header .nav ul li {
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    header .header-content h1 {
+        font-size: 31px;
+        padding: 95px 0 20px 0;
+    }
+
+    header .header-content p {
+        font-size: 13px;
+        max-width: 271px;
+    }
+
+    header .header-content .btn2 {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+
+    header .header-content .btn3 {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+
+    header .header-img img {
+        width: 188px;
+    }
+
+    header .header-img {
+        text-align: center;
+        transform: translateY(93px);
+    }
+
+    .two {
+        padding-top: 67px;
+    }
+
+    .three {
+        padding-top: 67px;
+    }
+
+    .middle {
+        background-position: center;
+    }
+
+    .middle .happy h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .happy p {
+        font-size: 13px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .middle .online h3 {
+        font-size: 16px;
+        padding-top: 18px;
+    }
+
+    .middle .online h5 {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .choose h6 {
+        padding: 69px 0 20px 0;
+    }
+
+    .choose h1 {
+        font-size: 25px;
+    }
+
+    .choose p {
+        font-size: 13px;
+        max-width: 257px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .choose .btn4 {
+        font-size: 12px;
+        padding: 8px 14px;
+        margin-bottom: 40px;
+    }
+
+    .pasta img {
+        margin-top: 50px;
+    }
+
+    .five {
+        padding-top: 10px;
+    }
+
+    .main2 {
+        display: block;
+        text-align: center;
+    }
+
+    .best h1 {
+        font-size: 30px;
+    }
+
+    .main2 .btn5 {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .best-img {
+        width: 320px;
+    }
+
+    .big {
+        width: 320px;
+        height: 289px;
+    }
+
+    .big h1 {
+        font-size: 20px;
+    }
+
+    .big p {
+        font-size: 14px;
+    }
+
+    .combo-main {
+        width: 320px;
+    }
+
+    .combo-content {
+        margin-left: 185px;
+    }
+
+    .combo-main {
+        height: 294px;
+    }
+
+
+    .combo-main2 {
+        width: 320px;
+    }
+
+    .combo-content2 {
+        width: 140px;
+        margin-left: 180px;
+    }
+
+    .combo-main2 {
+        height: 329px;
+    }
+
+    .our h6 {
+        padding-top: 80px;
+    }
+
+    .our h1 {
+        font-size: 31px;
+    }
+
+    .our p {
+        font-size: 13px;
+        max-width: 285px;
+    }
+
+    .rome {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .join-left {
+        padding-top: 50px;
+    }
+
+    .join-left h6 {
+        text-align: center;
+    }
+
+    .join-left h1 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .join-right {
+        padding-top: 36px;
+    }
+
+    .join-right p {
+        font-size: 13px;
+        max-width: 256px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .join-right .btn {
+        text-align: center;
+        margin-left: 91px;
+    }
+
+    .background-red .middle-main {
+        display: block;
+        text-align: center;
+    }
+
+    .background-red .middle-main .star h5 {
+
+        padding-bottom: 60px;
+    }
+
+    .free {
+        padding-top: 82px;
+    }
+
+    .free h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .free h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .free p {
+        max-width: 273px;
+        font-size: 13px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .free .btn {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .footer img {
+        margin-top: 60px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer p {
+        padding: 24px 0 20px 0;
+    }
+
+    .footer p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-about {
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .footer-about h3 {
+        padding-bottom: 20px;
+    }
+
+    .bottom {
+        display: block;
+        text-align: center;
+
+    }
+
+    .bottom .bottom-left p {
+        padding-bottom: 30px;
+    }
+
+}
+
+
+
+/* /* ========================================================= Media Queries for Menu================================== */
+/* /* ========================================================= Media Queries for Menu================================== */
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .header2 .top .topright .btn {
+        margin-right: 10px;
+    }
+
+    .pasta-middle h1 {
+        padding-left: 10px;
+    }
+
+    .width-img img {
+        width: 176px;
+    }
+
+    .pasta-middle {
+        padding: 262px 0 50px 0;
+    }
+
+    .step h5 {
+        padding-left: 10px;
+    }
+
+    .step h2 {
+        padding-left: 10px;
+    }
+
+    .step p {
+        padding-left: 10px;
+    }
+
+    .step2 h5 {
+        padding-left: 10px;
+    }
+
+    .step2 h2 {
+        padding-left: 10px;
+    }
+
+    .step2 p {
+        padding-left: 10px;
+        font-size: 20px;
+        max-width: 305px;
+    }
+
+    .step {
+        max-width: 283px;
+    }
+
+    .italian-img img {
+        width: 175px;
+    }
+
+    .rome2 p {
+        max-width: 175px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 991px;
+        margin: 0 auto;
+    }
+
+    .header2 .top .topleft span {
+        font-size: 16px;
+    }
+
+    .header2 .top .topright .btn {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+    .header2 .nav ul li a {
+        font-size: 15px;
+    }
+
+    .header2 .our-menu h1 {
+        font-size: 80px;
+    }
+
+    .pasta2 img {
+        transform: translateY(135px);
+    }
+
+    .pizza2 img {
+        transform: translateY(151px);
+    }
+
+    .dessert2 img {
+        transform: translateY(154px);
+    }
+
+    .pasta2 {
+        text-align: center;
+    }
+
+    .pizza2 {
+        text-align: center;
+    }
+
+    .dessert2 {
+        text-align: center;
+    }
+
+    .pasta2 h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .pizza2 h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .dessert2 h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .pasta2 h2 {
+        transform: translateY(144px);
+    }
+
+    .pizza2 h2 {
+        transform: translateY(146px);
+    }
+
+    .dessert2 h2 {
+        transform: translateY(148px);
+    }
+
+    .pasta-middle {
+        padding: 212px 0 50px 0;
+    }
+
+    .width-img img {
+        width: 124px;
+        height: 107px;
+    }
+
+    .width-content h2 {
+        font-size: 18px;
+    }
+
+
+
+    .width-content p {
+        font-size: 14px;
+        max-width: 205px;
+    }
+
+    .paesano-content h1 {
+        font-size: 25px;
+    }
+
+    .paesano-content p {
+        font-size: 15px;
+        max-width: 235px;
+    }
+
+    .craft h1 {
+        font-size: 50px;
+    }
+
+    .craft p {
+        font-size: 15px;
+    }
+
+    .step h2 {
+        font-size: 30px;
+    }
+
+    .step p {
+        font-size: 20px;
+    }
+
+    .step {
+        max-width: 217px;
+    }
+
+    .step2 h2 {
+        font-size: 28px;
+    }
+
+    .step2 p {
+        font-size: 17px;
+        max-width: 305px;
+    }
+
+    .italian-img img {
+        width: 127px;
+        height: 120px;
+    }
+
+    .italian-content h2 {
+        font-size: 20px;
+    }
+
+    .italian-content p {
+        font-size: 13px;
+        padding: 10px 0 0 20px;
+        max-width: 229px;
+    }
+
+    .our-location-content h1 {
+        font-size: 50px;
+    }
+
+    .our-location-content p {
+        font-size: 14px;
+    }
+
+    .rome2 h1 {
+        font-size: 25px;
+    }
+
+    .rome2 p {
+        max-width: 163px;
+        font-size: 13px;
+    }
+
+    .rome2 h5 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+
+    .header2 {
+        background-position: center;
+    }
+
+    .top {
+        display: block;
+    }
+
+    .top .topleft {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .topright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header2 .nav ul li {
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .header2 .header-content h1 {
+        font-size: 31px;
+        padding: 95px 0 20px 0;
+    }
+
+    .header2 .our-menu h1 {
+        font-size: 70px;
+    }
+
+    .pasta-middle {
+        padding: 174px 0 0px 0;
+    }
+
+    .pasta-middle h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .pasta-middle p {
+        font-size: 14px;
+        text-align: center;
+        max-width: 282px;
+        margin: 0 auto;
+    }
+
+    .width-img img {
+        margin-bottom: 0;
+    }
+
+    .width-img {
+        text-align: center;
+    }
+
+    .width-content h2 {
+        text-align: center;
+    }
+
+    .width-content p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .width-content p {
+        margin-bottom: 50px;
+    }
+
+    .paesano-content h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .paesano-content p {
+        font-size: 14px;
+        max-width: 235px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .craft h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .craft p {
+        font-size: 14px;
+        max-width: 290px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .step h5 {
+        text-align: center;
+    }
+
+    .step h2 {
+        text-align: center;
+    }
+
+    .step p {
+        text-align: center;
+    }
+
+    .step {
+        max-width: 320px;
+    }
+
+    .step2 h5 {
+        text-align: center;
+    }
+
+    .step2 h2 {
+        text-align: center;
+    }
+
+    .step2 p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .step3 h5 {
+        text-align: center;
+    }
+
+    .step3 h2 {
+        text-align: center;
+    }
+
+    .step3 h3 {
+        text-align: center;
+    }
+
+    .extra p {
+        text-align: center;
+    }
+
+    .extra h3 {
+        text-align: center;
+    }
+
+    .italian-img {
+        text-align: center;
+    }
+
+    .italian-content h2 {
+        text-align: center;
+    }
+
+    .italian-content p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .our-location-content h1 {
+        font-size: 37px;
+    }
+
+    .rome2 h5 {
+        padding-bottom: 50px;
+    }
+
+
+
+}
+
+
+/* ========================================================== Media Queries of About====================================== */
+
+/* ========================================================== Media Queries of About====================================== */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .header3 .top .topright .btn {
+        margin-right: 10px;
+    }
+
+    .header3 .top .topright .btn {
+        padding-left: 10px;
+    }
+
+    .about-our-story h6 {
+        padding-left: 10px;
+    }
+
+    .about-our-story h1 {
+        font-size: 56px;
+        padding-left: 10px;
+    }
+
+    .about-our-story p {
+        padding-left: 10px;
+        max-width: 529px;
+        font-size: 15px;
+    }
+
+    .about-it-img img {
+        width: 316px;
+    }
+
+    .about-it-right h3 {
+        font-size: 20px;
+    }
+
+    .about-it-right p {
+        max-width: 291px;
+        font-size: 15px;
+    }
+
+    .about-our-story-img img {
+        width: 342px;
+    }
+
+    .about-it-img h5 {
+        padding-left: 10px;
+    }
+
+    .about-it-img h6 {
+        padding-left: 10px;
+    }
+
+    .about-background2 .about-the-pizzaria h2 {
+        font-size: 35px;
+    }
+
+    .about-background2 .about-the-pizzaria p {
+        font-size: 15px;
+    }
+
+    .about-background4 {
+        width: 512px;
+    }
+
+    .about-background4 .about-the-pizzaria h2 {
+        font-size: 35px;
+    }
+
+    .about-background4 .about-the-pizzaria p {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 991px;
+        margin: 0 auto;
+    }
+
+    .header3 .top .topleft span {
+        font-size: 16px;
+    }
+
+    .header3 .top .topright .btn {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+    .header3 .nav ul li a {
+        font-size: 15px;
+    }
+
+    .header3 .our-menu h1 {
+        font-size: 80px;
+    }
+
+    .header3 .our-menu p {
+        font-size: 15px;
+    }
+
+    .about-our-story h1 {
+        font-size: 35px;
+    }
+
+    .about-our-story p {
+        padding-left: 10px;
+        max-width: 424px;
+        font-size: 13px;
+    }
+
+    .about-it-img img {
+        width: 242px;
+    }
+
+    .about-it-right h3 {
+        font-size: 17px;
+    }
+
+    .about-it-right p {
+        max-width: 199px;
+        font-size: 14px;
+    }
+
+    .about-our-story-img img {
+        width: 255px;
+        height: 573px;
+    }
+
+    .about-background2 {
+        width: 462px;
+    }
+
+    .about-background2 .about-the-pizzaria h2 {
+        font-size: 30px;
+    }
+
+    .about-background2 .about-the-pizzaria p {
+        font-size: 14px;
+        max-width: 345px;
+    }
+
+    .about-main .about-span span {
+        font-size: 20px;
+
+    }
+
+    .about-main .about-four h3 {
+        font-size: 20px;
+    }
+
+    .about-main .about-four p {
+        font-size: 15px;
+        max-width: 320px;
+    }
+
+    .about-background4 {
+        width: 384px;
+    }
+
+    .about-background4 .about-the-pizzaria h2 {
+        font-size: 30px;
+    }
+
+    .about-background4 .about-the-pizzaria p {
+        font-size: 14px;
+        max-width: 297px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .header3 {
+        background-position: center;
+    }
+
+    .top {
+        display: block;
+    }
+
+    .top .topleft {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .topright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header3 .nav ul li {
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .header3 .header-content h1 {
+        font-size: 31px;
+        padding: 95px 0 20px 0;
+    }
+
+    .header3 .our-menu h1 {
+        font-size: 65px;
+    }
+
+    .header3 .our-menu p {
+        font-size: 13px;
+        max-width: 245px;
+    }
+
+    .about-our-story {
+        padding-top: 90px;
+    }
+
+    .about-our-story h6 {
+        text-align: center;
+    }
+
+    .about-our-story h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-our-story p {
+        max-width: 269px;
+        font-size: 13px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .about-it-img img {
+        width: 320px;
+    }
+
+    .about-it-img h5 {
+        text-align: center;
+    }
+
+    .about-it-img h6 {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .about-it-right h3 {
+        text-align: center;
+    }
+
+    .about-it-right p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .about-our-story-img {
+        margin-top: 100px;
+    }
+
+    .about-our-story-img img {
+        width: 320px;
+        height: 404px;
+        margin-bottom: 80px;
+    }
+
+    .about-background2 {
+        width: 236px;
+        padding-left: 10px;
+    }
+
+    .about-background2 .about-the-pizzaria h2 {
+        font-size: 18px;
+    }
+
+    .about-background2 .about-the-pizzaria p {
+        font-size: 13px;
+        max-width: 206px;
+    }
+
+    .about-main .about-four h3 {
+        font-size: 15px;
+    }
+
+    .about-main .about-span span {
+        font-size: 15px;
+    }
+
+    .about-main .about-four p {
+        font-size: 12px;
+        max-width: 176px;
+    }
+
+    .about-background4 {
+        width: 236px;
+        padding-left: 10px;
+    }
+
+    .about-background4 .about-the-pizzaria h2 {
+        font-size: 25px;
+    }
+
+    .about-background4 .about-the-pizzaria p {
+        font-size: 13px;
+        max-width: 206px;
+    }
+}
+
+
+/* ================================================ Media Queries of Offers========================================= */
+/* ================================================ Media Queries of Offers========================================= */
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .header4 .top .topright .btn {
+        margin-right: 10px;
+    }
+
+    .combo-main {
+        width: 484px;
+    }
+
+    .combo-main {
+        width: 484px;
+    }
+
+    .combo-content {
+        width: 204px;
+        margin-left: 279px;
+    }
+
+    .combo-main2 {
+        width: 512px;
+    }
+
+    .combo-content2 {
+        width: 208px;
+        margin-left: 304px;
+    }
+
+    .combo-main5 {
+        width: 485px;
+    }
+
+    .combo-content5 {
+        width: 236px;
+        margin-left: 249px;
+    }
+
+    .combo-main6 {
+        width: 511px;
+    }
+
+    .combo-content6 {
+        margin-left: 316px;
+        width: 195px;
+
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 991px;
+        margin: 0 auto;
+    }
+
+
+    .header4 .top .topleft span {
+        font-size: 16px;
+    }
+
+    .header4 .top .topright .btn {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+    .header4 .nav ul li a {
+        font-size: 15px;
+    }
+
+    .header4 .our-menu h1 {
+        font-size: 80px;
+    }
+
+    .header4 .our-menu p {
+        font-size: 15px;
+    }
+
+    .combo-main {
+        width: 371px;
+
+        height: 286px;
+
+    }
+
+    .combo-content {
+        width: 169px;
+        margin-left: 202px;
+    }
+
+    .combo-main2 {
+        width: 381px;
+        height: 286px;
+    }
+
+    .combo-content2 {
+        width: 231px;
+        margin-left: 151px;
+    }
+
+    .combo-main5 {
+        width: 356px;
+        height: 346px;
+    }
+
+    .combo-content5 {
+        width: 236px;
+        margin-left: 120px;
+    }
+
+    .combo-content5 h2 {
+        font-size: 37px;
+    }
+
+    .combo-content5 h1 {
+        font-size: 75px;
+    }
+
+    .combo-main6 {
+        width: 381px;
+        height: 346px;
+    }
+
+    .combo-content6 {
+        margin-left: 186px;
+        width: 195px;
+    }
+
+    .combo-content6 h2 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .combo-content6 h1 {
+        font-size: 75px;
+    }
+
+    .host-a-party-main .host-a-party h1 {
+        font-size: 74px;
+    }
+
+    .host-a-party-main .host-a-party p {
+        font-size: 15px;
+    }
+
+    .host-a-party .btn {
+        padding: 11px 14px;
+        font-size: 13px;
+    }
+
+    .host-a-party-background .host-a-party-main {
+
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .header4 {
+        background-position: center;
+    }
+
+    .top {
+        display: block;
+    }
+
+    .top .topleft {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .topright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header4 .nav ul li {
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .header4 .header-content h1 {
+        font-size: 31px;
+        padding: 95px 0 20px 0;
+    }
+
+    .header4 .our-menu h1 {
+        font-size: 65px;
+    }
+
+    .header4 .our-menu p {
+        font-size: 13px;
+        max-width: 245px;
+    }
+
+    .combo-main {
+        width: 320px;
+    }
+
+    .combo-content {
+        width: 169px;
+        margin-left: 148px;
+    }
+
+    .combo-main2 {
+        width: 320px;
+    }
+
+    .combo-content2 {
+        margin-left: 89px;
+    }
+
+    .combo-main5 {
+        width: 320px;
+    }
+
+    .combo-content5 {
+        margin-left: 84px;
+    }
+
+    .combo-content5 h1 {
+        font-size: 65px;
+    }
+
+    .combo-main6 {
+        width: 320px;
+    }
+
+    .combo-content6 {
+        margin-left: 125px;
+
+    }
+
+    .host-a-party-background {
+        background-position: center;
+    }
+
+    .host-a-party-background .host-a-party-main {
+
+
+        width: 320px;
+
+
+    }
+
+    .host-a-party-main .host-a-party h1 {
+        font-size: 37px;
+    }
+
+    .host-a-party-main .host-a-party p {
+        font-size: 13px;
+    }
+
+    .host-a-party .btn {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* ================================================ Media Queries of Contact========================================== */
+/* ================================================ Media Queries of Contact========================================== */
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .header5 .top .topright .btn {
+        margin-right: 10px;
+    }
+
+    .header5 {
+        background-position: center;
+    }
+
+    .contact-left h2 {
+        font-size: 35px;
+    }
+
+    .contact-we h2 {
+        font-size: 35px;
+    }
+
+    input[type="text"] {
+        width: 282px;
+    }
+
+    input[type="email"] {
+        width: 282px;
+    }
+
+    input[type="number"] {
+        width: 282px;
+    }
+
+
+    textarea {
+        width: 589px;
+    }
+}
+
+@media screen and (max-width: 991px){
+      
+        .container{
+            max-width: 991px;
+            margin: 0 auto;
+        }
+
+        .header5{
+            background-position: center;
+        }
+
+        .header5 .top .topleft span {
+            font-size: 16px;
+        }
+    
+        .header5 .top .topright .btn {
+            padding: 7px 11px;
+            font-size: 13px;
+        }
+    
+        .header5 .nav ul li a {
+            font-size: 15px;
+        }
+    
+        .header5 .our-menu h1 {
+            font-size: 80px;
+        }
+
+        .contact-left h2 {
+            font-size: 26px;
+        }
+
+        .contact-main p {
+            font-size: 14px;
+            max-width: 171px;
+        }
+    
+        .contact-we h2 {
+            font-size: 30px;
+        }
+
+        .contact-we p{
+            font-size: 15px;
+        }
+    
+    .contact-press h2 {
+        font-size: 26px;
+    }
+    .contact-stay h2{
+        font-size: 25px;
+    }
+    label{
+        font-size: 15px;
+    }
+    input[type="text"] {
+        width: 203px;
+        padding: 8px;
+    }
+    
+    input[type="email"], input[type="number"]{
+        width: 203px;
+        padding: 8px;
+    }
+
+    textarea {
+        width: 429px;
+        height: 100px;
+    }
+    input[type="submit"]{
+        padding: 10px  11px;
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+         
+        .container{
+            max-width: 767px;
+            margin: 0 auto
+        }
+
+        [class*="col-"]{
+            width: 100%;
+        }
+
+        .header5 {
+            background-position: center;
+            padding-bottom: 659px;
+        }
+        .contact-background{
+            transform: translateY(-603px);
+        }
+    
+        .top {
+            display: block;
+        }
+    
+        .top .topleft {
+            text-align: center;
+        }
+    
+        .logo {
+            text-align: center;
+            padding-top: 20px;
+        }
+    
+        .topright {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .header5 .nav ul li {
+            display: block;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    
+        .header5 .header-content h1 {
+            font-size: 31px;
+            padding: 95px 0 20px 0;
+        }
+    
+        .header5 .our-menu h1 {
+            font-size: 65px;
+        }
+    
+
+        .contact-left h2 {
+            font-size: 24px;
+            text-align: center;
+            padding-left: 0;
+            margin-left: 0;
+            padding-top: 50px;
+        }
+        .contact-main p {
+            font-size: 13px;
+            max-width: 156px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+        .contact-main span{
+            font-size: 15px;
+          text-align: center;
+        }
+        .contact-main{
+            display: block;
+            text-align: center;
+        }
+        .contact-press h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .contact-press h3{
+            font-size: 24px;
+            text-align: center;
+        }
+        .contact-stay h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .contact-stay{
+            text-align: center;
+        }
+        .contact-we h2 {
+            font-size: 24px;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .contact-we p {
+            font-size: 14px;
+            width: 300px;
+            text-align: center;
+            margin: o auto;
+        }
+        label {
+            font-size: 14px;
+            text-align: center;
+            margin-left: 128px;
+        }
+
+        input[type="text"], input[type="number"], input[type="email"] {
+            width: 188px;
+            padding: 6px;
+            margin-left: 73px;
+        }
+        textarea {
+            width: 230px;
+            height: 85px;
+            margin-left: 72px;
+        }
+        .contact-background{
+            padding: 0;
+        }
+        input[type="submit"]{
+            margin-left: 123px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?12569208');
+    src: url('../font/fontello.eot?12569208#iefix') format('embedded-opentype'),
+        url('../font/fontello.svg?12569208#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('data:application/octet-stream;base64,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') format('woff'),
+        url('data:application/octet-stream;base64,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YbACJUZhOCMgPCM4GyEgIEYjR7ABKyNhOCFZsTABFCstsEcssQA6Ky6xMAEUKy2wSCyxADsrISMgIDywBiNCIzixMAEUK7AGQy6wMCstsEkssAAVIEewACNCsgABARUUEy6wNiotsEossAAVIEewACNCsgABARUUEy6wNiotsEsssQABFBOwNyotsEwssDkqLbBNLLAAFkUjIC4gRoojYTixMAEUKy2wTiywCiNCsE0rLbBPLLIAAEYrLbBQLLIAAUYrLbBRLLIBAEYrLbBSLLIBAUYrLbBTLLIAAEcrLbBULLIAAUcrLbBVLLIBAEcrLbBWLLIBAUcrLbBXLLMAAABDKy2wWCyzAAEAQystsFksswEAAEMrLbBaLLMBAQBDKy2wWyyzAAABQystsFwsswABAUMrLbBdLLMBAAFDKy2wXiyzAQEBQystsF8ssgAARSstsGAssgABRSstsGEssgEARSstsGIssgEBRSstsGMssgAASCstsGQssgABSCstsGUssgEASCstsGYssgEBSCstsGcsswAAAEQrLbBoLLMAAQBEKy2waSyzAQAARCstsGosswEBAEQrLbBrLLMAAAFEKy2wbCyzAAEBRCstsG0sswEAAUQrLbBuLLMBAQFEKy2wbyyxADwrLrEwARQrLbBwLLEAPCuwQCstsHEssQA8K7BBKy2wciywABaxADwrsEIrLbBzLLEBPCuwQCstsHQssQE8K7BBKy2wdSywABaxATwrsEIrLbB2LLEAPSsusTABFCstsHcssQA9K7BAKy2weCyxAD0rsEErLbB5LLEAPSuwQistsHossQE9K7BAKy2weyyxAT0rsEErLbB8LLEBPSuwQistsH0ssQA+Ky6xMAEUKy2wfiyxAD4rsEArLbB/LLEAPiuwQSstsIAssQA+K7BCKy2wgSyxAT4rsEArLbCCLLEBPiuwQSstsIMssQE+K7BCKy2whCyxAD8rLrEwARQrLbCFLLEAPyuwQCstsIYssQA/K7BBKy2whyyxAD8rsEIrLbCILLEBPyuwQCstsIkssQE/K7BBKy2wiiyxAT8rsEIrLbCLLLILAANFUFiwBhuyBAIDRVgjIRshWVlCK7AIZbADJFB4sQUBFUVYMFktAEu4AMhSWLEBAY5ZsAG5CAAIAGNwsQAHQrEAACqxAAdCsQAKKrEAB0KxAAoqsQAHQrkAAAALKrEAB0K5AAAACyq5AAMAAESxJAGIUViwQIhYuQADAGREsSgBiFFYuAgAiFi5AAMAAERZG7EnAYhRWLoIgAABBECIY1RYuQADAABEWVlZWVmxAA4quAH/hbAEjbECAESzBWQGAERE') format('truetype');
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?12569208#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-mobile:before {
+    content: '\e800';
+}
+
+/* '' */
+.icon-box:before {
+    content: '\e801';
+}
+
+/* '' */
+.icon-star:before {
+    content: '\e802';
+}
+
+/* '' */
+.icon-book:before {
+    content: '\e803';
+}
+
+/* '' */
+.icon-location:before {
+    content: '\e804';
+}
+
+/* '' */
+.icon-phone:before {
+    content: '\e805';
+}
+
+/* '' */
+.icon-play:before {
+    content: '\f00f';
+}
+
+/* '' */
+.icon-instagram-circled:before {
+    content: '\f05e';
+}
+
+/* '' */
+.icon-fontsize:before {
+    content: '\f088';
+}
+
+/* '' */
+.icon-mail-alt:before {
+    content: '\f0e0';
+}
+
+/* '' */
+.icon-star-half-alt:before {
+    content: '\f123';
+}
+
+/* '' */
+.icon-youtube-play:before {
+    content: '\f16a';
+}
+
+/* '' */
+.icon-right:before {
+    content: '\f178';
+}
+
+/* '' */
+.icon-paper-plane:before {
+    content: '\f1d8';
+}
+
+/* '' */
+.icon-twitter:before {
+    content: '\f309';
+}
+
+/* '' */
+.icon-facebook-circled:before {
+    content: '\f30d';
+}
+
+/* '' */
+.icon-facebook-squared:before {
+    content: '\f30e';
+}
+
+/* '' */
+.icon-instagram:before {
+    content: '\f32d';
+}
+
+/* '' */
