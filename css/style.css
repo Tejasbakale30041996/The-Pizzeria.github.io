@@ -79,7 +79,7 @@ body {
 
 
 header {
-    background: url(../../Img/pizzeria-template-hero-bg-img.jpg) no-repeat;
+    background: url(../Img/pizzeria-template-hero-bg-img.jpg) no-repeat;
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -290,7 +290,7 @@ header .header-img {
 
 
 .middle {
-    background: url(../../Img/pizzeria-template-delivery-section-img-bg.jpg) no-repeat;
+    background: url(../Img/pizzeria-template-delivery-section-img-bg.jpg) no-repeat;
     background-size: cover;
     padding: 100px 0;
     margin-top: 90px;
@@ -512,7 +512,7 @@ header .header-img {
 
 
 .best-img {
-    background: url(../../Img/pizzeria-template-deals-img-1.jpg) no-repeat;
+    background: url(../Img/pizzeria-template-deals-img-1.jpg) no-repeat;
     background-size: cover;
     /* position: relative; */
     width: 483px;
@@ -537,7 +537,7 @@ header .header-img {
 }
 
 .big {
-    background: url(../../Img/pizzeria-template-deals-shape-bg-1.svg) no-repeat;
+    background: url(../Img/pizzeria-template-deals-shape-bg-1.svg) no-repeat;
     background-size: cover;
     padding: 30px 0 30px 180px;
     border-top-right-radius: 16px;
@@ -576,7 +576,7 @@ header .header-img {
 }
 
 .combo-content {
-    background: url(../../Img/pizzeria-template-shape-bg-2.svg) no-repeat;
+    background: url(../Img/pizzeria-template-shape-bg-2.svg) no-repeat;
     background-size: cover;
     padding: 20px 0 60px 0;
     width: 200px;
@@ -590,7 +590,7 @@ header .header-img {
 }
 
 .combo-main {
-    background: url(../../Img/pizzeria-template-deals-img-2.jpg) no-repeat;
+    background: url(../Img/pizzeria-template-deals-img-2.jpg) no-repeat;
     background-size: cover;
     /* position: absolute; */
     width: 571px;
@@ -625,7 +625,7 @@ header .header-img {
 }
 
 .combo-content2 {
-    background: url(../../Img/pizzeria-template-shape-bg-3.svg) no-repeat;
+    background: url(../Img/pizzeria-template-shape-bg-3.svg) no-repeat;
     background-size: cover;
     padding: 6px 0 0 0;
     width: 200px;
@@ -643,7 +643,7 @@ header .header-img {
 }
 
 .combo-main2 {
-    background: url(../../Img/pizzeria-template-deals-img-3.jpg) no-repeat;
+    background: url(../Img/pizzeria-template-deals-img-3.jpg) no-repeat;
     background-size: cover;
     /* position: absolute; */
     width: 599px;
